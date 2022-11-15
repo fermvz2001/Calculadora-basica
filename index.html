@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Basica</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="css/calcular.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+
+        <div class="calculator dark">
+
+            <div class="theme_toggler active">
+
+                <i class="toggler_icon"></i>
+            </div>
+            <!-- display screem será la pantalla donde haremos nuestras operaciones -->
+            <div class="diplay_Screem"> 
+
+                <div id="display">
+
+                </div>
+            </div>
+            <!-- este div estan todos los botonoes de la calculadora -->
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button id="clear" class="btn_operator">C</button></td>
+                        <td><button id="/" class="btn_operator">/</button></td>
+                        <td><button id="*" class="btn_operator">*</button></td>
+                        <td><button id="backspace" class="btn_operator"><</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="7" class="btn_number">7</button></td>
+                        <td><button id="8" class="btn_number">8</button></td>
+                        <td><button id="9" class="btn_number">9</button></td>
+                        <td><button id="-" class="btn_operator">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="4" class="btn_number">4</button></td>
+                        <td><button id="5" class="btn_number">5</button></td>
+                        <td><button id="6" class="btn_number">6</button></td>
+                        <td><button id="+" class="btn_operator">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="1" class="btn_number">1</button></td>
+                        <td><button id="2" class="btn_number">2</button></td>
+                        <td><button id="3" class="btn_number">3</button></td>
+                        <td rowspan="2"><button id="equal" class="btn_equal">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="." class="btn_operator">.</button></td>
+                        <td><button id="0" class="btn_number">0</button></td>
+                        <td><button id="00" class="btn_number">00</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
